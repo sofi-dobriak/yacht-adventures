@@ -1,0 +1,150 @@
+.yachts-section {
+    padding-top: 100px;
+    position: relative;
+}
+
+.yachts-section::before,
+.yachts-section::after {
+    position: absolute;
+    content: '';
+}
+
+.yachts-section::before {
+    background-image: url(../img/mobile/yacht-elipse.png);
+    width: 375px;
+    height: 656px;
+    top: -124px;
+    left: 0;
+}
+
+.yachts-section::after {
+    background-image: url(../img/mobile/about-img-three.png);
+    width: 260px;
+    height: 244px;
+    top: -30px;
+    right: 0;
+    z-index: -1;
+}
+
+.yachts-title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: -0.04em;
+    margin-bottom: 40px;
+}
+
+.yachts-link {
+    border: 1px solid var(--border-color);
+    border-radius: 60px;
+    padding: 14px 28px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: -0.04em;
+}
+
+.yachts-list {
+    margin-top: 94px;
+    margin-bottom: 24px;
+}
+
+.yachts-item {
+    background-color: var(--card-bg-color);
+    padding: 18px;
+    border-radius: 24px;
+}
+
+.about-img {
+    margin-bottom: 24px;
+}
+
+.yachts-sub-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.yachts-sub-title {
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.04em;
+    padding-left: 6px;
+    text-transform: uppercase;
+}
+
+.yachts-label {
+    font-size: 12px;
+    line-height: 1.18;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    opacity: 0.5;
+}
+
+.description-list {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding-left: 6px;
+    padding-bottom: 6px;
+}
+
+.description-title {
+    font-size: 14px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.description-text {
+    font-size: 14px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    margin-bottom: 6px;
+}
+
+.description-title:last-child,
+.description-text:last-child {
+    margin-bottom: 0;
+}
+
+.slider-button-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+}
+
+.slider-button {
+    background-color: transparent;
+    border-radius: 60px;
+    border: 1px solid var(--border-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: border-color .3s ease;
+}
+
+.slider-button:hover,
+.slider-button:focus {
+    border-color: var(--hover-focus-color);
+}
+
+.slider-button-icon {
+    fill: var(--icon-color);
+    transition: fill .3s ease;
+}
+
+.slider-button-item:first-child {
+    transform: rotate(180deg);
+}
+
+.slider-button:hover .slider-button-icon,
+.slider-button:focus .slider-button-icon {
+    fill: var(--hover-focus-color);
+}
