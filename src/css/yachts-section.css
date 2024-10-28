@@ -11,6 +11,8 @@
 
 .yachts-section::before {
     background-image: url(../img/mobile/yacht-elipse.png);
+    background-repeat: no-repeat;
+    background-size: contain;
     width: 375px;
     height: 656px;
     top: -124px;
@@ -128,6 +130,10 @@
     justify-content: center;
 
     transition: border-color .3s ease;
+
+    padding: 14px;
+    min-width: 46px;
+    height: 36px;
 }
 
 .slider-button:hover,
