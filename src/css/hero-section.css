@@ -1,0 +1,158 @@
+.hero-section {
+    position: relative;
+}
+
+.hero-section::after {
+    content: '';
+    position: absolute;
+    background-image: url(../img/mobile/hero-bg-elipse.png);
+    width: 375px;
+    height: 680px;
+    left: 0;
+    bottom: -64px;
+    z-index: -1;
+}
+
+.hero-title {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.1;
+    letter-spacing: -0.04em;
+    max-width: 332px;
+    margin-bottom: 14px;
+}
+
+.hero-title span {
+    background: linear-gradient(107deg, #bec7c2 0%, #a1b5ba 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-text {
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: -0.02em;
+    margin-bottom: 24px;
+    max-width: 332px;
+}
+
+.hero-list {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 40px;
+}
+
+.hero-button {
+    min-width: 130px;
+    height: 42px;
+    border-radius: 60px;
+    border: none;
+    background-color: var(--button-main-bg-color);
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: -0.04em;
+    color: var(--main-font-color);
+
+    transition: background-color .3s ease;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    background-color: var(--hover-focus-color);
+}
+
+.hero-link {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: -0.04em;
+
+    padding: 12px 28px;
+    border: 1px solid var(--border-color);
+    border-radius: 60px;
+
+    transition: color .3s ease, border-color .3s ease;
+}
+
+.hero-link:hover,
+.hero-link:focus {
+    color: var(--hover-focus-color);
+    border-color: var(--hover-focus-color);
+}
+
+.clients-container {
+    margin-bottom: 24px;
+    padding-top: 24px;
+    padding-left: 24px;
+}
+
+.clients-list {
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.clients-item {
+    margin-right: -10px;
+}
+
+.clients-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--accent-font-color);
+}
+
+.yacht-container {
+    width: 334px;
+    height: 428px;
+    background-image: url(../img/mobile/hero-bg-card.png);
+    background-repeat: no-repeat;
+
+    background-size: contain;
+    position: relative;
+}
+
+.yacht-container::before {
+    content: '';
+    position: absolute;
+    background-image: url(../img/mobile/img-CEO.png);
+    width: 133px;
+    height: 133px;
+    top: 32px;
+    right: -12px;
+}
+
+.hero-yacht-img {
+    margin-bottom: 14px;
+}
+
+.price-container {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 48px;
+}
+
+.price {
+    font-size: 48px;
+    line-height: 1.1;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    color: var(--accent-font-color);
+}
+
+.price-decription {
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: -0.04em;
+    color: var(--accent-font-color);
+}

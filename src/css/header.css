@@ -1,0 +1,134 @@
+.header {
+    padding-bottom: 20px;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-list {
+    /* display: flex;
+    align-items: center;
+    gap: 24px; */
+    display: none;
+}
+
+.logo-burger-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(246, 245, 239, 0.2);
+    padding-bottom: 24px;
+    padding-top: 24px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.open-button {
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.open-button:hover .open-icon,
+.open-button:focus .open-icon {
+    fill: var(--hover-focus-color);
+}
+
+.open-icon {
+    fill: var(--icon-color);
+    transition: fill .3s ease;
+}
+
+.mobile-menu {
+    width: 375px;
+    height: 812px;
+    background-color: var(--body-bg-color);
+
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    padding: 26px 20px;
+
+    transform: translateX(100%);
+    pointer-events: none;
+    transition: transform .3s ease;
+}
+
+.mobile-menu.is-open {
+    transform: translateX(0);
+    pointer-events: auto;
+}
+
+.mobile-menu::after {
+    content: '';
+    position: absolute;
+    background-image: url(../img/mobile/bg-elipse.png);
+    width: 375px;
+    height: 480px;
+    left: 0;
+    bottom: 125px;
+    z-index: -1;
+}
+
+.mobile-logo {
+    border-bottom: 1px solid rgba(246, 245, 239, 0.2);
+    padding-bottom: 24px;
+    margin-bottom: 140px;
+}
+
+.close-button {
+    position: absolute;
+    top: 24px;
+    right: 20px;
+
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-button:hover .close-icon,
+.close-button:focus .close-icon {
+    stroke: var(--hover-focus-color)
+}
+
+.close-icon {
+    fill: transparent;
+    stroke-width: 1.30px;
+    stroke: var(--icon-color);
+    transition: stroke .3s ease;
+}
+
+.mobile-item {
+    text-align: center;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    font-weight: 700;
+}
+
+.mobile-item:last-child {
+    margin-bottom: 0;
+}
+
+.mobile-link {
+    transition: color .3s ease;
+    cursor: pointer;
+}
+
+.mobile-link:hover,
+.mobile-link:focus {
+    color: var(--hover-focus-color);
+}

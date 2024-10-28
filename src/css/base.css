@@ -1,0 +1,84 @@
+/* Fonts */
+
+@font-face {
+    font-display: swap;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/dm-sans-v15-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/dm-sans-v15-latin-500.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'DM Sans';
+    font-style: italic;
+    font-weight: 500;
+    src: url('../fonts/dm-sans-v15-latin-500italic.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/dm-sans-v15-latin-700.woff2') format('woff2');
+}
+
+/* Variables */
+
+:root {
+    --main-font-family: 'DM Sans', sans-serif;
+    --main-font-size: 16px;
+    --main-line-height: 1.4;
+    --main-font-color: #f6f5ef;
+    --accent-font-color: #11131f;
+
+    --body-bg-color: #11131f;
+    --button-main-bg-color: #93abae;
+    --button-card-bg-color: #f6f5ef;
+    --border-color: #f6f5ef;
+    --icon-color: #f6f5ef;
+
+    --card-bg-color: #1f212d;
+
+    --hover-focus-color: #88b3b9;
+    --hover-focus-gradient: #linear-gradient(107deg, #bec7c2 0%, #a1b5ba 100%);
+
+    --social-border-gradient: rgba(246, 245, 239, 0.5);
+
+    --feedback-font-color: rgba(246, 245, 239, 0.5);
+}
+
+/* General */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--main-font-family);
+    font-size: var(--main-font-size);
+    line-height: var(--main-line-height);
+    color: var(--main-font-color);
+    background-color: var(--body-bg-color);
+}
+
+.container {
+    width: 100%;
+    max-width: 375px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.section {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
