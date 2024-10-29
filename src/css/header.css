@@ -75,7 +75,7 @@
     position: absolute;
     background-image: url(../img/mobile/bg-elipse.png);
     width: 375px;
-    height: 480px;
+    min-height: 480px;
     left: 0;
     bottom: 125px;
     z-index: -1;

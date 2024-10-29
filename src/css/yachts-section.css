@@ -145,6 +145,7 @@
     height: 36px;
 }
 
+
 .slider-button:hover,
 .slider-button:focus {
     border-color: var(--hover-focus-color);
