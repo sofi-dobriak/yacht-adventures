@@ -1,7 +1,3 @@
-.feedback-section {
-    border-bottom: 1px solid rgba(246, 245, 239, 0.2);
-}
-
 .feedback-title {
     font-weight: 500;
     font-size: 24px;
@@ -87,12 +83,24 @@
     align-items: center;
     justify-content: center;
 
+    border: 1px solid var(--button-main-bg-color);
     background-color: var(--button-main-bg-color);
     margin-left: auto;
+    transition: background-color .3s ease;
+}
 
+.back-top-link:hover,
+.back-top-link:focus {
+    background-color: transparent;
 }
 
 .back-top-icon {
     fill: var(--icon-color);
     transform: rotate(-90deg);
+    transition: fill .3s ease;
+}
+
+.back-top-link:hover .back-top-icon,
+.back-top-link:focus .back-top-icon {
+    fill: var(--hover-focus-color);
 }

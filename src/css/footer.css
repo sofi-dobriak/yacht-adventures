@@ -1,0 +1,85 @@
+.footer {
+    padding-bottom: 14px;
+    position: relative;
+}
+
+.footer::after {
+    position: absolute;
+    content: '';
+    background-image: url(../img/mobile/footer-elipse.png);
+    width: 375px;
+    height: 292px;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.footer-logo {
+    padding-top: 40px;
+    border-top: 1px solid rgba(246, 245, 239, 0.2);
+    margin-bottom: 40px;
+}
+
+.footer-nav-list {
+    margin-bottom: 40px;
+}
+
+.footer-nav-link {
+    transition: color .3s ease;
+}
+
+.footer-nav-link:hover,
+.footer-nav-link:focus {
+    color: var(--hover-focus-color);
+}
+
+.social-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.social-list {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 40px;
+}
+
+.social-link {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    border: 1px solid rgba(246, 245, 239, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icon {
+    fill: var(--icon-color);
+    transition: fill .3s ease;
+}
+
+.social-item:hover .social-icon,
+.social-item:focus .social-icon {
+    fill: var(--hover-focus-color);
+}
+
+.footer-rights-policy-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+}
+
+.footer-rights,
+.footer-policy {
+    font-size: 12px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: rgba(246, 245, 239, 0.5);
+}
