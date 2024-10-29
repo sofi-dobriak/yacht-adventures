@@ -36,8 +36,7 @@
 
             <div class="label-input-container">
                 <label class="form-label" for="user-tel">Phone number</label>
-                <input class="form-input" type="tel" id="user-tel" name="user-tel" pattern="^\+38 \d{3} \d{3} \d{4}$"
-                    required>
+                <input class="form-input" type="tel" id="user-tel" name="user-tel" pattern="^\d{3}\d{3}\d{4}$" required>
             </div>
 
             <div class="label-input-container">
@@ -45,7 +44,7 @@
                 <textarea class="form-textarea" name="user-comment" id="user-comment"></textarea>
             </div>
 
-            <button class="form-button" type="submit">Send
+            <button class="form-button modal-btn-open" type="submit">Send
                 <svg class="form-button-icon" width="18" height="18">
                     <use href="./img/icons.svg#icon-arrow"></use>
                 </svg>
