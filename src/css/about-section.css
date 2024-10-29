@@ -1,3 +1,17 @@
+.about-section {
+    position: relative;
+}
+
+.about-section::after {
+    position: absolute;
+    content: '';
+    background-image: url(../img/mobile/about-img-three.png);
+    width: 260px;
+    height: 244px;
+    right: 12px;
+    z-index: -1;
+}
+
 .about-text {
     font-weight: 500;
     font-size: 24px;
