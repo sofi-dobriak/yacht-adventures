@@ -1,0 +1,56 @@
+<div class="section rent-section">
+    <div class="container">
+        <h2 class="rent-title">Rent a yacht now</h2>
+
+        <picture>
+            <source srcset="./img/desktop/form-img.png 1x, ./img/desktop/form-img@2x.png 2x" media="(min-width: 768px)"
+                type="image/png">
+            <source srcset="./img/desktop/form-img.webp 1x, ./img/desktop/form-img@2x.webp 2x"
+                media="(min-width: 768px)" type="image/webp">
+
+            <source srcset="./img/tablet/form-img.png 1x, ./img/tablet/form-img@2x.png 2x" media="(min-width: 768px)"
+                type="image/png">
+            <source srcset="./img/tablet/form-img.webp 1x, ./img/tablet/form-img@2x.webp 2x" media="(min-width: 768px)"
+                type="image/webp">
+
+            <source srcset="./img/mobile/form-img.png 1x, ./img/mobile/form-img@2x.png 2x" media="(min-width: 375px)"
+                type="image/png">
+            <source srcset="./img/mobile/form-img.webp 1x, ./img/mobile/form-img@2x.webp 2x" media="(min-width: 375px)"
+                type="image/webp">
+
+            <img class="rent-img" src="./img/mobile/form-img.png" alt="A Yacht" width="260">
+        </picture>
+
+        <form class="form">
+            <div class="label-input-container">
+                <label class="form-label" for="user-name">Full Name</label>
+                <input class="form-input" type="text" id="user-name" name="user-name"
+                    pattern="^[A-ZА-Я][a-zа-я]{2,29}([- ][A-ZА-Я][a-zа-я]{1,29})?$" required>
+            </div>
+
+            <div class="label-input-container">
+                <label class="form-label" for="user-email">Email</label>
+                <input class="form-input" type="email" id="user-email" name="user-email"
+                    pattern="^[a-zA-Z0-9]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required>
+            </div>
+
+            <div class="label-input-container">
+                <label class="form-label" for="user-tel">Phone number</label>
+                <input class="form-input" type="tel" id="user-tel" name="user-tel" pattern="^\+38 \d{3} \d{3} \d{4}$"
+                    required>
+            </div>
+
+            <div class="label-input-container">
+                <label class="form-label" for="user-comment">Comment</label>
+                <textarea class="form-textarea" name="user-comment" id="user-comment"></textarea>
+            </div>
+
+            <button class="form-button" type="submit">Send
+                <svg class="form-button-icon" width="18" height="18">
+                    <use href="./img/icons.svg#icon-arrow"></use>
+                </svg>
+            </button>
+        </form>
+
+    </div>
+</div>

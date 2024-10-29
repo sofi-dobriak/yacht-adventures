@@ -1,0 +1,90 @@
+.rent-section {
+    position: relative;
+}
+
+.rent-section:after {
+    position: absolute;
+    content: '';
+    background-image: url(../img/mobile/form-elipse.png);
+    width: 363px;
+    height: 684px;
+    bottom: -220px;
+    right: 0;
+}
+
+.rent-title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: -0.04em;
+    margin-bottom: 16px;
+}
+
+.rent-img {
+    margin-bottom: 40px;
+}
+
+.form-input {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    width: 335px;
+    height: 36px;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--main-font-color);
+    margin-bottom: 24px;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    color: var(--main-font-color);
+}
+
+.form-textarea {
+    resize: none;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    width: 335px;
+    height: 75px;
+    display: block;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 24px;
+}
+
+.form-button {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: -0.04em;
+    color: var(--main-font-color);
+
+    border-radius: 60px;
+    width: 124px;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+
+    transition: border-color .3s ease, color .3s ease;
+}
+
+.form-button:hover,
+.form-button:focus {
+    border-color: var(--hover-focus-color);
+    color: var(--hover-focus-color)
+}
+
+.form-button-icon {
+    fill: var(--icon-color);
+    margin-left: 16px;
+    transition: fill .3s ease;
+}
+
+.form-button:hover .form-button-icon,
+.form-button:focus .form-button-icon {
+    fill: var(--hover-focus-color);
+}
