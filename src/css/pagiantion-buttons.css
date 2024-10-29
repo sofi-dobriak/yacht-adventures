@@ -1,0 +1,17 @@
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.pagination-button {
+    background-color: var(--card-bg-color);
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+}
+
+.active {
+    background-color: var(--hover-focus-color);
+}

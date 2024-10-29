@@ -18,4 +18,10 @@ const swiper = new Swiper('.swiper', {
     nextEl: '.slider-button.next',
     prevEl: '.slider-button.prev',
   },
+
+  pagination: {
+    el: '.pagination',
+    bulletClass: 'pagination-button',
+    bulletActiveClass: 'active',
+  },
 });
