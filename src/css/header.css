@@ -62,6 +62,7 @@
     transform: translateX(100%);
     pointer-events: none;
     transition: transform .3s ease;
+    z-index: 999;
 }
 
 .mobile-menu.is-open {

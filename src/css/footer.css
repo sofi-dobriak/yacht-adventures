@@ -8,10 +8,8 @@
     content: '';
     background-image: url(../img/mobile/footer-elipse.png);
     width: 375px;
-    height: 292px;
+    height: 269px;
     bottom: 0;
-    right: 0;
-    z-index: -1;
 }
 
 .footer-logo {
