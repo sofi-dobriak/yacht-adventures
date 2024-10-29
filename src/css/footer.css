@@ -3,17 +3,18 @@
     position: relative;
 }
 
-.footer::after {
+/* .footer::after {
     position: absolute;
     content: '';
-    background-image: url(../img/mobile/footer-elipse.png);
+    background-image: url();
     background-size: contain;
     background-repeat: no-repeat;
     width: 375px;
-    height: 269px;
+    height: 480px;
     bottom: 0;
+    right: 0;
     z-index: -999;
-}
+} */
 
 .footer-logo {
     padding-top: 40px;
