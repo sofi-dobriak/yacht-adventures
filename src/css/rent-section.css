@@ -10,6 +10,7 @@
     height: 684px;
     bottom: -220px;
     right: 0;
+    z-index: -1;
 }
 
 .rent-title {
@@ -22,6 +23,11 @@
 
 .rent-img {
     margin-bottom: 40px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 4px;
 }
 
 .form-input {
