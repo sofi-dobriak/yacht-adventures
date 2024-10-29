@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yacht Adventures</title>
   <script type="module" crossorigin src="/yacht-adventures/index.js"></script>
-  <link rel="stylesheet" crossorigin href="/yacht-adventures/assets/index-Bt2G96CR.css">
+  <link rel="stylesheet" crossorigin href="/yacht-adventures/assets/index-rpk8N0xo.css">
 </head>
 
 <body>
@@ -74,6 +74,52 @@
 </header>
 
   <main>
+    <div class="modal-overlay is-open">
+    <div class="modal-window">
+        <button class="close-button modal-window-close-button modal-btn-close" type="button"
+            aria-label="Modal close button">
+            <svg class="close-icon" width="24" height="24">
+                <use href="/yacht-adventures/assets/icons-C08G-GZz.svg#icon-close-button"></use>
+            </svg>
+        </button>
+
+        <picture>
+            <source srcset="/yacht-adventures/assets/hero-img-DTYafhyd.png 1x, /yacht-adventures/assets/hero-img@2x-D_kFqfPI.png 2x" media="(min-width: 768px)"
+                type="image/png">
+            <source srcset="/yacht-adventures/assets/hero-img-D1yLkHMY.webp 1x, /yacht-adventures/assets/hero-img@2x-P-XUWQXR.webp 2x" media="(min-width: 768px)"
+                type="image/webp">
+
+            <source srcset="/yacht-adventures/assets/hero-img-CQoLnqnh.png 1x, /yacht-adventures/assets/hero-img@2x-CFpoNbGS.png 2x" media="(min-width: 375px)"
+                type="image/png">
+            <source srcset="/yacht-adventures/assets/hero-img-BFUj-JEM.webp 1x, /yacht-adventures/assets/hero-img@2x-BKK6YCTM.webp 2x" media="(min-width: 375px)"
+                type="image/webp">
+
+            <img class="modal-window-img" src="/yacht-adventures/assets/hero-img-CQoLnqnh.png" alt="A yacht" width="378">
+        </picture>
+
+        <svg class="modal-elipse" width="275" height="275" viewBox="0 0 543 543" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g opacity="0.6" filter="url(#filter0_f_92_1874)">
+                <ellipse cx="71" cy="71" rx="71" ry="71"
+                    transform="matrix(0.707168 -0.707046 0.708995 0.705214 171 272)" fill="#91AFBA" />
+            </g>
+            <defs>
+                <filter id="filter0_f_92_1874" x="0.449219" y="0.967773" width="542.196" height="541.804"
+                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                    <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_92_1874" />
+                </filter>
+            </defs>
+        </svg>
+
+        <h2 class="modal-window-title">Thank you</h2>
+        <p class="modal-window-text">
+            Thank you for choosing Yacht Adventures, your booking details have been received and our team will be in
+            touch shortly to confirm your reservation and provide any additional information or assistance you may need.
+        </p>
+    </div>
+</div>
     <div class="section hero-section">
     <div class="container">
         <h1 class="hero-title">Explore the High Seas with <span>Our Luxury Yacht</span> Rentals</h1>
@@ -417,8 +463,7 @@
 
             <div class="label-input-container">
                 <label class="form-label" for="user-tel">Phone number</label>
-                <input class="form-input" type="tel" id="user-tel" name="user-tel" pattern="^\+38 \d{3} \d{3} \d{4}$"
-                    required>
+                <input class="form-input" type="tel" id="user-tel" name="user-tel" pattern="^\d{3}\d{3}\d{4}$" required>
             </div>
 
             <div class="label-input-container">
@@ -426,7 +471,7 @@
                 <textarea class="form-textarea" name="user-comment" id="user-comment"></textarea>
             </div>
 
-            <button class="form-button" type="submit">Send
+            <button class="form-button modal-btn-open" type="submit">Send
                 <svg class="form-button-icon" width="18" height="18">
                     <use href="/yacht-adventures/assets/icons-C08G-GZz.svg#icon-arrow"></use>
                 </svg>
