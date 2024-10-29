@@ -1,0 +1,33 @@
+.service-item {
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.service-item:last-child {
+    margin-bottom: 0;
+}
+
+.service-button {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: -0.04em;
+
+    border-radius: 60px;
+    width: 96px;
+    height: 44px;
+    background-color: var(--button-card-bg-color);
+    border: none;
+
+    position: absolute;
+    left: 32px;
+    bottom: 32px;
+
+    transition: background-color .3s ease, color .3s ease;
+}
+
+.service-button:hover,
+.service-button:focus {
+    background-color: var(--hover-focus-color);
+    color: var(--main-font-color);
+}
