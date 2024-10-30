@@ -10,7 +10,7 @@
 }
 
 .yachts-section::before {
-    background-image: url(../img/mobile/yacht-bige-lipse.png);
+    background-image: url(../img/mobile/yacht-big-elipse.png);
     background-repeat: no-repeat;
     background-size: contain;
     width: 375px;
@@ -163,4 +163,16 @@
 .slider-button:hover .slider-button-icon,
 .slider-button:focus .slider-button-icon {
     fill: var(--hover-focus-color);
+}
+
+@media (min-resolution: 192dpi) {
+    .yachts-section::before {
+        background-image: url(../img/mobile/yacht-big-elipse@2x.png);
+        background-size: 375px 656px;
+    }
+
+    .yachts-section::after {
+        background-image: url(../img/mobile/yacht-small-elipse@2x.png);
+        background-size: 375px 596px;
+    }
 }

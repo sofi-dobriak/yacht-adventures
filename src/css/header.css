@@ -9,9 +9,6 @@
 }
 
 .nav-list {
-    /* display: flex;
-    align-items: center;
-    gap: 24px; */
     display: none;
 }
 
@@ -132,4 +129,11 @@
 .mobile-link:hover,
 .mobile-link:focus {
     color: var(--hover-focus-color);
+}
+
+@media (min-resolution: 192dpi) {
+    .mobile-menu::after {
+        background-image: url(../img/mobile/bg-elipse@2x.png);
+        background-size: 375px 480px;
+    }
 }

@@ -11,7 +11,7 @@
     height: 680px;
     left: 0;
     bottom: -64px;
-    z-index: -1;
+    z-index: -3;
 }
 
 .hero-title {
@@ -94,11 +94,19 @@
 .clients-list {
     display: flex;
     align-items: center;
-    margin-bottom: 14px;
 }
 
 .clients-item {
     margin-right: -10px;
+}
+
+.clients-img.first {
+    position: relative;
+}
+
+.clients-img.third {
+    position: relative;
+    z-index: -1;
 }
 
 .clients-text {
@@ -118,6 +126,7 @@
 
     background-size: contain;
     position: relative;
+    z-index: -2;
 }
 
 .yacht-container::before {
@@ -156,4 +165,16 @@
     line-height: 1.4;
     letter-spacing: -0.04em;
     color: var(--accent-font-color);
+}
+
+@media (min-resolution: 192dpi) {
+    .hero-section::after {
+        background-image: url(../img/mobile/hero-bg-elipse@2x.png);
+        background-size: 375px 680px;
+    }
+
+    .yacht-container::before {
+        background-image: url(../img/mobile/img-CEO@2x.png);
+        background-size: 133px 133px;
+    }
 }

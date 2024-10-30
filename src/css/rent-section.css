@@ -2,7 +2,7 @@
     position: relative;
 }
 
-.rent-section:after {
+/* .rent-section:after {
     position: absolute;
     content: '';
     background-image: url(../img/mobile/form-elipse.png);
@@ -11,7 +11,7 @@
     bottom: -220px;
     right: 0;
     z-index: -1;
-}
+} */
 
 .rent-title {
     font-weight: 500;
@@ -94,3 +94,25 @@
 .form-button:focus .form-button-icon {
     fill: var(--hover-focus-color);
 }
+
+.backgroud {
+    position: relative;
+}
+
+.rent-circle {
+    position: absolute;
+    border-radius: 100%;
+    width: 100px;
+    height: 283px;
+    background-color: var(--circle-color);
+    filter: blur(100px);
+    right: 0;
+    bottom: 0;
+}
+
+/* @media (min-resolution: 192dpi) {
+    .rent-section:after {
+        background-image: url(../img/mobile/form-elipse@2x.png);
+        background-size: 363px 684px;
+    }
+} */

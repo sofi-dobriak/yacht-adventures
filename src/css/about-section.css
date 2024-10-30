@@ -48,3 +48,10 @@
 .about-img-item:not(:last-child) {
     margin-bottom: 24px;
 }
+
+@media (min-resolution: 192dpi) {
+    .about-section::after {
+        background-image: url(../img/mobile/about-img-three@2x.png);
+        background-size: 260px 244px;
+    }
+}
