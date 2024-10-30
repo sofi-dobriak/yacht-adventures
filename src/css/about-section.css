@@ -45,7 +45,7 @@
     letter-spacing: -0.02em;
 }
 
-.about-img-item:not(:last-child) {
+.about-section-img {
     margin-bottom: 24px;
 }
 
@@ -53,5 +53,32 @@
     .about-section::after {
         background-image: url(../img/mobile/about-img-three@2x.png);
         background-size: 260px 244px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .about-text {
+        font-size: 32px;
+        margin-bottom: 32px;
+        max-width: 514px;
+    }
+
+    .about-list {
+        justify-content: flex-end;
+        gap: 32px;
+        margin-bottom: 64px;
+    }
+
+    .about-item {
+        max-width: 184px;
+    }
+
+    .about-section-img {
+        margin-bottom: 32px;
+    }
+
+    .about-section::after {
+        right: 136px;
+        bottom: -116px;
     }
 }

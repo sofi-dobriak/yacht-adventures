@@ -175,4 +175,54 @@
         background-image: url(../img/mobile/yacht-small-elipse@2x.png);
         background-size: 375px 596px;
     }
+
+    @media screen and (min-width: 768px) {
+        .yachts-section::before {
+            background-image: url(../img/tablet/yacht-big-elipse@2x.png);
+            background-size: 520px 705px;
+        }
+
+        .yachts-section::after {
+            background-image: url(../img/tablet/yacht-small-elipse@2x.png);
+            background-size: 634px 798px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .yachts-section {
+        padding-top: 44px;
+        padding-bottom: 50px;
+    }
+
+    .yachts-section::before {
+        background-image: url(../img/tablet/yacht-big-elipse.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 634px;
+        height: 798px;
+        top: -172px;
+        left: 0;
+        z-index: -1;
+    }
+
+    .yachts-section::after {
+        background-image: url(../img/tablet/yacht-small-elipse.png);
+        width: 520px;
+        height: 596px;
+        top: -170px;
+        right: 0;
+        z-index: -1;
+    }
+
+    .yachts-title {
+        font-size: 70px;
+        margin-bottom: 64px;
+        max-width: 640px;
+    }
+
+    .yachts-link {
+        font-size: 18px;
+        margin-bottom: 114px;
+    }
 }

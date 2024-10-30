@@ -31,3 +31,34 @@
     background-color: var(--hover-focus-color);
     color: var(--main-font-color);
 }
+
+@media screen and (min-width: 768px) {
+    .service-section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .service-item {
+        margin-bottom: 32px;
+    }
+
+    .service-item .fishing {
+        margin-left: auto;
+    }
+
+    .service-button.fishing {
+        left: 332px;
+    }
+
+    .service-item .sunbathing {
+        margin-left: 64px;
+    }
+
+    .service-button {
+        font-size: 18px;
+        width: 114px;
+        height: 48px;
+    }
+
+
+}
