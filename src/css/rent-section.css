@@ -2,17 +2,6 @@
     position: relative;
 }
 
-/* .rent-section:after {
-    position: absolute;
-    content: '';
-    background-image: url(../img/mobile/form-elipse.png);
-    width: 363px;
-    height: 684px;
-    bottom: -220px;
-    right: 0;
-    z-index: -1;
-} */
-
 .rent-title {
     font-weight: 500;
     font-size: 36px;
@@ -28,6 +17,7 @@
 .form-label {
     display: block;
     margin-bottom: 4px;
+    font-size: 14px;
 }
 
 .form-input {
@@ -110,9 +100,42 @@
     bottom: 0;
 }
 
-/* @media (min-resolution: 192dpi) {
-    .rent-section:after {
-        background-image: url(../img/mobile/form-elipse@2x.png);
-        background-size: 363px 684px;
+@media screen and (min-width: 768px) {
+    .rent-section {
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
-} */
+
+    .rent-title {
+        font-size: 60px;
+        max-width: 288px;
+        margin-bottom: 32px;
+    }
+
+    .rent-img {
+        margin-bottom: 0;
+    }
+
+    .rent-section-container {
+        display: flex;
+        gap: 70px;
+    }
+
+    .form-label {
+        font-size: 16px;
+    }
+
+    .form-input {
+        margin-bottom: 28px;
+    }
+
+    .form-button {
+        font-size: 18px;
+        width: 134px;
+        height: 48px;
+    }
+
+    .rent-circle {
+        height: 383px;
+    }
+}
