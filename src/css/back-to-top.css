@@ -1,0 +1,55 @@
+.back-top-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+
+    border: 1px solid var(--button-main-bg-color);
+    background-color: var(--button-main-bg-color);
+    margin-left: auto;
+
+    position: sticky;
+    bottom: 20px;
+    right: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, background-color .3s ease, visibility .3s ease;
+    z-index: 1001;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back-top-link.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.back-top-link:hover {
+    background-color: transparent;
+}
+
+.back-top-icon {
+    width: 30px;
+    height: 18px;
+    fill: var(--icon-color);
+    transform: rotate(-90deg);
+    transition: fill .3s ease;
+}
+
+.back-top-link:hover .back-top-icon {
+    fill: var(--hover-focus-color);
+}
+
+@media screen and (min-width: 768px) {
+    .back-top-link {
+        width: 68px;
+        height: 68px;
+        bottom: 32px;
+        right: 32px;
+    }
+
+    .back-top-icon {
+        height: 30px;
+    }
+}
