@@ -24,6 +24,7 @@
 }
 
 .hero-title span {
+    font-style: italic;
     background: linear-gradient(107deg, #bec7c2 0%, #a1b5ba 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -98,6 +99,8 @@
 
 .clients-item {
     margin-right: -10px;
+    margin-bottom: 12px;
+    height: 48px;
 }
 
 .clients-img.first {
@@ -168,13 +171,138 @@
 }
 
 @media (min-resolution: 192dpi) {
+
+    /* Mobile */
+
     .hero-section::after {
         background-image: url(../img/mobile/hero-bg-elipse@2x.png);
         background-size: 375px 680px;
     }
 
+    .yacht-container {
+        background-image: url(../img/mobile/hero-bg-card@2x.png);
+        background-size: 334px 428px;
+    }
+
     .yacht-container::before {
         background-image: url(../img/mobile/img-CEO@2x.png);
         background-size: 133px 133px;
+    }
+
+    /* Tablet */
+
+    @media (min-width: 768px) {
+        .hero-section::after {
+            background-image: url(../img/tablet/hero-bg-elipse@2x.png);
+            background-size: 375px 680px;
+        }
+
+        .yacht-container {
+            background-image: url(../img/tablet/hero-bg-card@2x.png);
+            background-size: 426px 598px;
+        }
+
+        .yacht-container::before {
+            background-image: url(../img/tablet/img-CEO@2x.png);
+            background-size: 233px 233px;
+        }
+    }
+
+    /* Desktop */
+    @media (min-width: 1280) {
+        /* .hero-section::after {
+            background-image: url(../img/tablet/hero-bg-elipse@2x.png);
+            background-size: 375px 680px;
+        }
+
+        .yacht-container {
+            background-image: url(../img/tablet/hero-bg-card@2x.png);
+            background-size: 426px 598px;
+        }
+
+        .yacht-container::before {
+            background-image: url(../img/tablet/img-CEO@2x.png);
+            background-size: 233px 233px;
+        } */
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hero-section {
+        padding-top: 32px;
+        padding-bottom: 50px;
+    }
+
+    .hero-title {
+        font-size: 60px;
+        margin-bottom: 16px;
+        max-width: 698px;
+    }
+
+    .hero-title span {
+        font-style: italic;
+    }
+
+    .hero-text {
+        font-size: 16px;
+        margin-bottom: 32px;
+        max-width: 540px;
+    }
+
+    .hero-list {
+        gap: 12px;
+        margin-bottom: 64px;
+    }
+
+    .hero-button {
+        min-width: 152px;
+        height: 48px;
+        font-size: 18px;
+    }
+
+    .hero-link {
+        font-size: 18px;
+    }
+
+    .clients-container {
+        padding-top: 32px;
+        padding-left: 32px;
+    }
+
+    .hero-yacht-img {
+        margin-top: 110px;
+        margin-bottom: 22px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .price {
+        font-size: 60px;
+    }
+
+    .price-decription {
+        font-size: 18px;
+    }
+
+    .hero-section::after {
+        background-image: url(../img/tablet/hero-bg-elipse.png);
+        width: 428px;
+        height: 815px;
+        background-repeat: no-repeat;
+        top: 250px;
+    }
+
+    .yacht-container {
+        width: 426px;
+        height: 598px;
+        background-image: url(../img/tablet/hero-bg-card.png);
+    }
+
+    .yacht-container::before {
+        background-image: url(../img/tablet/img-CEO.png);
+        width: 233px;
+        height: 233px;
+        top: 32px;
+        right: -146px;
     }
 }

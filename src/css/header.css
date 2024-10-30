@@ -121,13 +121,16 @@
     margin-bottom: 0;
 }
 
-.mobile-link {
+.mobile-link,
+.nav-link {
     transition: color .3s ease;
     cursor: pointer;
 }
 
 .mobile-link:hover,
-.mobile-link:focus {
+.mobile-link:focus,
+.nav-link:hover,
+.nav-link:focus {
     color: var(--hover-focus-color);
 }
 
@@ -135,5 +138,28 @@
     .mobile-menu::after {
         background-image: url(../img/mobile/bg-elipse@2x.png);
         background-size: 375px 480px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .header {
+        padding-bottom: 32px;
+    }
+
+    .nav-list {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .open-button {
+        display: none;
+    }
+
+    .logo-burger-container {
+        display: block;
+        padding-bottom: 32px;
+        padding-top: 32px;
     }
 }
