@@ -32,8 +32,6 @@
 .feedback-item {
     border-radius: 24px;
     padding: 24px;
-    width: 335px;
-    height: 208px;
     background-color: var(--card-bg-color);
 }
 

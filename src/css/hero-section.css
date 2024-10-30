@@ -175,10 +175,10 @@
 
     /* Mobile */
 
-    .hero-section::after {
+    /* .hero-section::after {
         background-image: url(../img/mobile/hero-bg-elipse@2x.png);
         background-size: 375px 680px;
-    }
+    } */
 
     .yacht-container {
         background-image: url(../img/mobile/hero-bg-card@2x.png);
@@ -193,10 +193,10 @@
     /* Tablet */
 
     @media (min-width: 768px) {
-        .hero-section::after {
+        /* .hero-section::after {
             background-image: url(../img/tablet/hero-bg-elipse@2x.png);
             background-size: 375px 680px;
-        }
+        } */
 
         .yacht-container {
             background-image: url(../img/tablet/hero-bg-card@2x.png);
@@ -211,12 +211,8 @@
 
     /* Desktop */
     @media (min-width: 1280) {
-        /* .hero-section::after {
-            background-image: url(../img/tablet/hero-bg-elipse@2x.png);
-            background-size: 375px 680px;
-        }
 
-        .yacht-container {
+        /* .yacht-container {
             background-image: url(../img/tablet/hero-bg-card@2x.png);
             background-size: 426px 598px;
         }
@@ -291,11 +287,11 @@
     }
 
     .hero-section::after {
-        background-image: url(../img/tablet/hero-bg-elipse.png);
-        width: 428px;
-        height: 815px;
-        background-repeat: no-repeat;
-        top: 250px;
+        background-color: #939cac;
+        width: 200px;
+        height: 400px;
+        filter: blur(100px);
+        top: 500px;
     }
 
     .yacht-container {

@@ -196,22 +196,24 @@
     }
 
     .yachts-section::before {
-        background-image: url(../img/tablet/yacht-big-elipse.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 634px;
-        height: 798px;
-        top: -172px;
-        left: 0;
+        width: 350px;
+        height: 350px;
+        border-radius: 100%;
+        background-color: #91afba;
+        filter: blur(150px);
+        top: 0;
+        left: 32px;
         z-index: -1;
     }
 
     .yachts-section::after {
-        background-image: url(../img/tablet/yacht-small-elipse.png);
-        width: 520px;
-        height: 596px;
-        top: -170px;
-        right: 0;
+        width: 204px;
+        height: 204px;
+        border-radius: 100%;
+        background-color: #a6a9b2;
+        filter: blur(150px);
+        top: 64px;
+        right: 64px;
         z-index: -1;
     }
 
