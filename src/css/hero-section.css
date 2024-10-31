@@ -6,11 +6,13 @@
 .hero-section::after {
     content: '';
     position: absolute;
-    background-image: url(../img/mobile/hero-bg-elipse.png);
-    width: 375px;
-    height: 680px;
+    background-color: var(--main-circle-color);
+    filter: blur(80px);
+    border-radius: 100%;
+    width: 200px;
+    height: 280px;
     left: 0;
-    bottom: -64px;
+    top: 394px;
     z-index: -3;
 }
 
@@ -174,12 +176,6 @@
 @media (min-resolution: 192dpi) {
 
     /* Mobile */
-
-    /* .hero-section::after {
-        background-image: url(../img/mobile/hero-bg-elipse@2x.png);
-        background-size: 375px 680px;
-    } */
-
     .yacht-container {
         background-image: url(../img/mobile/hero-bg-card@2x.png);
         background-size: 334px 428px;
@@ -191,13 +187,7 @@
     }
 
     /* Tablet */
-
     @media (min-width: 768px) {
-        /* .hero-section::after {
-            background-image: url(../img/tablet/hero-bg-elipse@2x.png);
-            background-size: 375px 680px;
-        } */
-
         .yacht-container {
             background-image: url(../img/tablet/hero-bg-card@2x.png);
             background-size: 426px 598px;
@@ -287,7 +277,7 @@
     }
 
     .hero-section::after {
-        background-color: #939cac;
+        background-color: var(--main-circle-color);
         width: 200px;
         height: 400px;
         filter: blur(100px);

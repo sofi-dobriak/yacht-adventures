@@ -35,6 +35,9 @@
     border-bottom: 1px solid rgba(246, 245, 239, 0.2);
     padding-bottom: 24px;
     margin-bottom: 140px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .close-button {
@@ -61,6 +64,10 @@
     transition: stroke .3s ease;
 }
 
+.mobile-nav {
+    margin-top: 140px;
+}
+
 .mobile-item {
     text-align: center;
     margin-bottom: 14px;
@@ -74,15 +81,12 @@
     margin-bottom: 0;
 }
 
-.mobile-link,
-.nav-link {
+.mobile-link {
     transition: color .3s ease;
     cursor: pointer;
 }
 
 .mobile-link:hover,
-.mobile-link:focus,
-.nav-link:hover,
-.nav-link:focus {
+.mobile-link:focus {
     color: var(--hover-focus-color);
 }

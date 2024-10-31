@@ -94,7 +94,7 @@
     border-radius: 100%;
     width: 100px;
     height: 283px;
-    background-color: var(--circle-color);
+    background-color: var(--main-circle-color);
     filter: blur(100px);
     right: 0;
     bottom: 0;

@@ -10,21 +10,23 @@
 }
 
 .yachts-section::before {
-    background-image: url(../img/mobile/yacht-big-elipse.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 375px;
-    height: 656px;
-    top: -124px;
-    left: 0;
+    width: 220px;
+    height: 220px;
+    border-radius: 100%;
+    background-color: var(--main-circle-color);
+    filter: blur(150px);
+    top: 140px;
+    left: -40px;
     z-index: -1;
 }
 
 .yachts-section::after {
-    background-image: url(../img/mobile/yacht-small-elipse.png);
-    width: 375px;
-    height: 596px;
-    top: -140px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-color: var(--secondary-circle-color);
+    filter: blur(150px);
+    top: 64px;
     right: 0;
     z-index: -1;
 }
@@ -198,23 +200,19 @@
     .yachts-section::before {
         width: 350px;
         height: 350px;
-        border-radius: 100%;
-        background-color: #91afba;
+        background-color: var(--main-circle-color);
         filter: blur(150px);
         top: 0;
         left: 32px;
-        z-index: -1;
     }
 
     .yachts-section::after {
         width: 204px;
         height: 204px;
-        border-radius: 100%;
-        background-color: #a6a9b2;
+        background-color: var(--secondary-circle-color);
         filter: blur(150px);
         top: 64px;
         right: 64px;
-        z-index: -1;
     }
 
     .yachts-title {
