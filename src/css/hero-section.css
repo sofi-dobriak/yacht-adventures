@@ -198,20 +198,6 @@
             background-size: 233px 233px;
         }
     }
-
-    /* Desktop */
-    @media (min-width: 1280) {
-
-        /* .yacht-container {
-            background-image: url(../img/tablet/hero-bg-card@2x.png);
-            background-size: 426px 598px;
-        }
-
-        .yacht-container::before {
-            background-image: url(../img/tablet/img-CEO@2x.png);
-            background-size: 233px 233px;
-        } */
-    }
 }
 
 @media screen and (min-width: 768px) {
@@ -296,5 +282,31 @@
         height: 233px;
         top: 32px;
         right: -146px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .hero-section {
+        padding-top: 32px;
+        padding-bottom: 82px;
+    }
+
+    .hero-container {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .hero-title {
+        max-width: 576px;
+    }
+
+    .hero-section::after {
+        background-color: var(--main-circle-color);
+        width: 420px;
+        height: 420px;
+        filter: blur(200px);
+        top: 120px;
     }
 }

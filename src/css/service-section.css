@@ -3,7 +3,7 @@
     margin-bottom: 24px;
 }
 
-.service-item:last-child {
+.service-item.sunbathing {
     margin-bottom: 0;
 }
 
@@ -44,11 +44,8 @@
     }
 
     .service-item .fishing {
-        margin-left: auto;
-    }
-
-    .service-button.fishing {
-        left: 332px;
+        margin-left: 304px;
+        margin-bottom: 32px;
     }
 
     .service-item .sunbathing {
@@ -72,5 +69,31 @@
         left: 0;
         top: 40%;
     }
+}
 
+@media screen and (min-width: 1280px) {
+    .service-section {
+        padding-top: 82px;
+        padding-bottom: 82px;
+    }
+
+    .diving-fishing-container {
+        display: flex;
+        align-items: flex-end;
+        gap: 64px;
+        margin-bottom: 64px;
+    }
+
+    .service-item .fishing,
+    .service-item {
+        margin: 0;
+    }
+
+    .service-item .fishing {
+        margin: 0;
+    }
+
+    .service-item .sunbathing {
+        margin-left: 340px;
+    }
 }

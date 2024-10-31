@@ -3,6 +3,7 @@ const swiper = new Swiper('.swiper', {
 
   slidesPerView: 1,
   spaceBetween: 16,
+  watchOverflow: false,
 
   breakpoints: {
     768: {
@@ -15,8 +16,8 @@ const swiper = new Swiper('.swiper', {
   },
 
   navigation: {
-    nextEl: '.slider-button.next',
-    prevEl: '.slider-button.prev',
+    nextEl: '.next',
+    prevEl: '.prev',
   },
 
   pagination: {
@@ -25,3 +26,7 @@ const swiper = new Swiper('.swiper', {
     bulletActiveClass: 'active',
   },
 });
+
+document.querySelector('.next').style.display = 'flex';
+document.querySelector('.prev').style.display = 'flex';
+swiper.update();
