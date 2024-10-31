@@ -291,6 +291,10 @@
         padding-bottom: 82px;
     }
 
+    .hero-list {
+        margin-bottom: 0;
+    }
+
     .hero-container {
         display: flex;
         align-items: center;

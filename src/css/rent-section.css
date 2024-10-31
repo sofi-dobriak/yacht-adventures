@@ -139,3 +139,28 @@
         height: 383px;
     }
 }
+
+@media screen and (min-width: 1280px) {
+    .rent-section {
+        padding-top: 82px;
+        padding-bottom: 82px;
+    }
+
+    .rent-section-container {
+        justify-content: center;
+        gap: 188px;
+    }
+
+    .form-input {
+        width: 444px;
+    }
+
+    .form-textarea {
+        width: 444px;
+    }
+
+    .rent-circle {
+        height: 250px;
+        width: 250px;
+    }
+}

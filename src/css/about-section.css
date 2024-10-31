@@ -45,7 +45,7 @@
     letter-spacing: -0.02em;
 }
 
-.about-section-img-item:not(:last-child) {
+.about-section-img-item {
     margin-bottom: 24px;
 }
 
@@ -87,6 +87,10 @@
     .about-section {
         padding-top: 82px;
         padding-bottom: 82px;
+    }
+
+    .about-text {
+        margin-bottom: 0;
     }
 
     .text-list-container {

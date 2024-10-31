@@ -60,7 +60,6 @@
 
 .yachts-list {
     margin-top: 94px;
-    margin-bottom: 24px;
 }
 
 .yachts-item {
@@ -168,6 +167,9 @@
 
 .desk-slider-button {
     display: none;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
 }
 
 @media (min-resolution: 192dpi) {
@@ -234,7 +236,7 @@
     .yachts-section {
         padding-bottom: 82px;
         background-image: url(../img/desktop/desk-yacht-decor.png);
-        background-size: 1280px 1804px;
+        background-size: cover;
         background-repeat: no-repeat;
     }
 
@@ -251,7 +253,6 @@
 
     .yachts-list {
         margin-top: 0;
-        margin-bottom: 0;
     }
 
     .yachts-section::before {
@@ -268,6 +269,9 @@
 
     .desk-slider-button {
         display: flex;
+        visibility: visible;
+        opacity: 1;
+        pointer-events: auto;
     }
 
     .slider-yacts-container {
