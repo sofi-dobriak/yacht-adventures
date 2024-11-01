@@ -1,5 +1,5 @@
 .mobile-menu {
-    width: 100%;
+    width: 375px;
     height: 100%;
     background-color: var(--body-bg-color);
 
@@ -25,7 +25,7 @@
     position: absolute;
     background-image: url(../img/mobile/bg-elipse.png);
     width: 375px;
-    min-height: 480px;
+    min-height: 370px;
     left: 0;
     bottom: 0;
     z-index: -1;
