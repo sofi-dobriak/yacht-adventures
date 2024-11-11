@@ -204,13 +204,9 @@
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 320px) {
     .yacht-container {
         width: 312px;
-    }
-
-    .yacht-container::before {
-        right: 0;
     }
 
     @media (min-resolution: 192dpi) {
@@ -296,6 +292,13 @@
         width: 426px;
         height: 598px;
         background-image: url(../img/tablet/hero-bg-card.png);
+    }
+
+    @media (min-resolution: 192dpi) {
+        .yacht-container {
+            background-image: url(/img/mobile/hero-bg-card@2x.png);
+            background-size: 426px 598px;
+        }
     }
 
     .yacht-container::before {
