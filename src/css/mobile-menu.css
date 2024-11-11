@@ -90,3 +90,9 @@
 .mobile-link:focus {
     color: var(--hover-focus-color);
 }
+
+@media screen and (min-width: 320px) {
+    .mobile-menu {
+        width: 344px;
+    }
+}

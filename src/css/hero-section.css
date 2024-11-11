@@ -139,6 +139,7 @@
     content: '';
     position: absolute;
     background-image: url(../img/mobile/img-CEO.png);
+    background-repeat: no-repeat;
     width: 133px;
     height: 133px;
     top: 32px;
@@ -175,9 +176,10 @@
     color: var(--accent-font-color);
 }
 
+/* Images 192 dpi */
+
 @media (min-resolution: 192dpi) {
 
-    /* Mobile */
     .yacht-container {
         background-image: url(../img/mobile/hero-bg-card@2x.png);
         background-size: 334px 428px;
@@ -188,7 +190,7 @@
         background-size: 133px 133px;
     }
 
-    /* Tablet */
+
     @media (min-width: 768px) {
         .yacht-container {
             background-image: url(../img/tablet/hero-bg-card@2x.png);
@@ -201,6 +203,24 @@
         }
     }
 }
+
+@media screen and (max-width: 320px) {
+    .yacht-container {
+        width: 312px;
+    }
+
+    .yacht-container::before {
+        right: 0;
+    }
+
+    @media (min-resolution: 192dpi) {
+        .yacht-container {
+            background-image: url(../img/mobile/hero-bg-card@2x.png);
+            background-size: 312px 428px;
+        }
+    }
+}
+
 
 @media screen and (min-width: 768px) {
     .hero-section {

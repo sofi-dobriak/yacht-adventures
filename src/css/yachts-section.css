@@ -100,7 +100,11 @@
     align-items: center;
     gap: 32px;
     padding-left: 6px;
-    padding-bottom: 6px;
+    padding-bottom: 22px;
+}
+
+.yachts-item .benetti {
+    padding-bottom: 0;
 }
 
 .description-title {
@@ -239,7 +243,6 @@
         background-size: cover;
         background-repeat: no-repeat;
     }
-
 
     .yachts-title {
         font-size: 100px;
